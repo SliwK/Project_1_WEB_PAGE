@@ -1,0 +1,288 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Open Sans', sans-serif;
+	margin: 0;
+}
+
+.container {
+	margin: 0 auto;
+	max-width: 1230px;
+	position: relative;
+}
+
+/* HEADER */
+
+.header {
+  background-image: url(https://i.imgur.com/XQofZ8B.jpg);
+  background-position: bottom right;
+  background-size: cover;
+	display: flex;
+  color: white;
+  height: 100vh;
+	position: relative;
+}
+
+.header h2 {
+	font-size: 50px;
+}
+
+.logotype {
+  height: 40px;
+	margin-top: 40px;
+	width: auto;
+}
+
+.text {
+	align-items: center;
+	display: -webkit-flex;
+	display: flex;
+	height: 900px;
+}
+
+.phone {
+	position: absolute;
+	right: -30px;
+	bottom: -180px;
+}
+
+.phone img {
+	height: auto;
+	max-width: 720px;
+	resize: both;
+	-webkit-resize:both;
+}
+
+.header .backtext {
+  display: inline-block;
+	font-size: 10px;
+	left: -30px;
+	position:absolute;
+  top: 450px;
+  transform: rotate(-90deg);
+}
+
+/* INFRO */
+
+.intro {
+	margin-bottom: 20px;
+	margin-top: 50px;
+}
+
+.intro p {
+	color: grey;
+}
+
+/* TILES */
+
+.tiles {
+	color: white;
+}
+
+.tile-section {
+	overflow: hidden;
+	position: absolute;
+	width: 1800px;
+}
+
+.tiles .row {
+	display: flex;
+	width: 1800px;
+}
+
+.tiles [class^="col"] {
+	padding: 20px;
+	position: relative;
+}
+
+.tile1 {
+	background-color: #F5989D;
+}
+
+.tile2 {
+	background-color: #615F7D;
+}
+
+.tile3 {
+	background-image: url(https://i.imgur.com/ArfOY83.jpg);
+	background-position: center;
+	background-size: cover;
+}
+
+.tile4 {
+	background-color: #BD8CBF;
+}
+
+.tile5 {
+	background-image: url(https://i.imgur.com/gcWKtWj.jpg);
+	background-position: center;
+	background-size: cover;
+}
+
+.tile6 {
+	background-color: #82CA9C;
+}
+
+.tile7 {
+	background-image: url(https://i.imgur.com/lmUPrYw.jpg);
+	background-size: cover;
+	background-position: center;
+}
+
+/* DETAILS */
+.details {
+	margin-bottom: 130px;
+	margin-top: 100px;
+}
+
+.details h1 {
+	padding-bottom: 20px;
+}
+
+.details h3 {
+	color: black;
+	font-size: 15px;
+	font-weight: bold;
+	padding-bottom: 20px;
+}
+
+.details p {
+	color: grey;
+	font-size: 15px;
+}
+
+/* SLOGAN */
+
+.slogan {
+	height: 900px;
+	background-image: url(https://i.imgur.com/dj5hStJ.jpg);
+	background-position: center;
+	background-size: cover;
+}
+
+.slogan .text {
+	align-items: flex-end;
+	color: white;
+	display: flex;
+	height: 80vh;
+}
+
+.slogan h2 {
+	font-size: 50px;
+	padding-bottom: 20px;
+}
+
+/* REASON */
+
+.reason {
+	align-items: center;
+	background-color: #82CA9C;
+	color: white;
+	display: flex;
+	height: 500px;
+	position: relative;
+}
+
+.reason .backtext {
+	color: white;
+  display: inline-block;
+	font-size: 10px;
+	left: 0;
+	position:absolute;
+	top: 200px;
+  transform: rotate(-90deg);
+}
+
+/* SALE */
+
+.sale {
+	align-items: center;
+	background-color: #F6F7FA;
+	display:flex;
+	height: 800px;
+	position: relative;
+}
+
+.sale [class^="col"] {
+	padding: 40px;
+}
+
+.sale .button1 {
+	background-color: #BD8CBF;
+	border: none;
+	border-radius: 5px;
+	color: white;
+	padding: 5px 10px;
+	text-transform: uppercase;
+}
+
+.sale .button2 {
+	background-color: #82CA9C;
+	border: none;
+	border-radius: 5px;
+	color: white;
+	padding: 15px 30px;
+	text-transform: uppercase;
+}
+
+.sale .fa {
+	color: #C5C5C5;
+	font-size: 30px;
+	padding: 10px 5px;
+}
+
+.sale [class^="col"]:hover {
+	background-color: white;
+	box-shadow: 0 0 50px grey;
+}
+
+.sale .backtext {
+	color: grey;
+  display: inline-block;
+	font-size: 10px;
+	left: 0;
+	position:absolute;
+	top: 250px;
+  transform: rotate(-90deg);
+}
+
+/* FOOTER */
+
+footer {
+	align-items: center;
+	background-color: black;
+	color: white;
+	display: flex;
+	height: 800px;
+}
+
+footer .input-email {
+	border: none;
+	height: 40px;
+	padding-left: 0;
+	width: 300px;
+}
+
+footer .mail {
+	background-color: #82CA9C;
+	border: none;
+	height: 40px;
+	padding: 0;
+	width: 40px;
+}
+
+footer .subtitle {
+	color: grey;
+}
+/* MEDIA */
+
+@media (max-width: 991px) {
+	.phone {
+		visibility: hidden;
+	}
+	.backtext {
+		visibility: hidden;
+	}
+}
