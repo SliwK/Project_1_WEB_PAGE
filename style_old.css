@@ -1,6 +1,5 @@
 * {
-	-webkit-box-sizing: border-box;
-	        box-sizing: border-box;
+	box-sizing: border-box;
 }
 
 body {
@@ -20,8 +19,6 @@ body {
   background-image: url(https://i.imgur.com/XQofZ8B.jpg);
   background-position: bottom right;
   background-size: cover;
-	display: -webkit-box;
-	display: -ms-flexbox;
 	display: flex;
   color: white;
   height: 100vh;
@@ -39,21 +36,21 @@ body {
 }
 
 .text {
-	-webkit-box-align: center;
-	    -ms-flex-align: center;
-	        align-items: center;
-	display: -webkit-box;
-	display: -ms-flexbox;
+	align-items: center;
+	display: -webkit-flex;
 	display: flex;
-	max-height: 900px;
+	height: 900px;
 }
 
 .phone {
 	position: absolute;
-	right: 20px;
+	right: -30px;
 	bottom: -180px;
+}
+
+.phone img {
 	height: auto;
-	max-width: 520px;
+	max-width: 720px;
 	resize: both;
 	-webkit-resize:both;
 }
@@ -64,9 +61,7 @@ body {
 	left: -30px;
 	position:absolute;
   top: 450px;
-  -webkit-transform: rotate(-90deg);
-      -ms-transform: rotate(-90deg);
-          transform: rotate(-90deg);
+  transform: rotate(-90deg);
 }
 
 /* INFRO */
@@ -93,8 +88,6 @@ body {
 }
 
 .tiles .row {
-	display: -webkit-box;
-	display: -ms-flexbox;
 	display: flex;
 	width: 1800px;
 }
@@ -170,12 +163,8 @@ body {
 }
 
 .slogan .text {
-	-webkit-box-align: end;
-	    -ms-flex-align: end;
-	        align-items: flex-end;
+	align-items: flex-end;
 	color: white;
-	display: -webkit-box;
-	display: -ms-flexbox;
 	display: flex;
 	height: 80vh;
 }
@@ -188,13 +177,9 @@ body {
 /* REASON */
 
 .reason {
-	-webkit-box-align: center;
-	    -ms-flex-align: center;
-	        align-items: center;
+	align-items: center;
 	background-color: #82CA9C;
 	color: white;
-	display: -webkit-box;
-	display: -ms-flexbox;
 	display: flex;
 	height: 500px;
 	position: relative;
@@ -207,20 +192,14 @@ body {
 	left: 0;
 	position:absolute;
 	top: 200px;
-  -webkit-transform: rotate(-90deg);
-      -ms-transform: rotate(-90deg);
-          transform: rotate(-90deg);
+  transform: rotate(-90deg);
 }
 
 /* SALE */
 
 .sale {
-	-webkit-box-align: center;
-	    -ms-flex-align: center;
-	        align-items: center;
+	align-items: center;
 	background-color: #F6F7FA;
-	display:-webkit-box;
-	display:-ms-flexbox;
 	display:flex;
 	height: 800px;
 	position: relative;
@@ -256,8 +235,7 @@ body {
 
 .sale [class^="col"]:hover {
 	background-color: white;
-	-webkit-box-shadow: 0 0 50px grey;
-	        box-shadow: 0 0 50px grey;
+	box-shadow: 0 0 50px grey;
 }
 
 .sale .backtext {
@@ -267,21 +245,15 @@ body {
 	left: 0;
 	position:absolute;
 	top: 250px;
-  -webkit-transform: rotate(-90deg);
-      -ms-transform: rotate(-90deg);
-          transform: rotate(-90deg);
+  transform: rotate(-90deg);
 }
 
 /* FOOTER */
 
 footer {
-	-webkit-box-align: center;
-	    -ms-flex-align: center;
-	        align-items: center;
+	align-items: center;
 	background-color: black;
 	color: white;
-	display: -webkit-box;
-	display: -ms-flexbox;
 	display: flex;
 	height: 800px;
 }
